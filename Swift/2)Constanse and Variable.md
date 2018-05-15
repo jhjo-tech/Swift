@@ -1,0 +1,94 @@
+# Constants and Variables
+
+
+
+## Constants and Variable
+
+
+Constants (상수) - 한 번 설정되면 값 변경 불가
+
+Variable (변수) - 설정한 값을 변경 가능
+
+```
+let constants = 10 // 초기화한 값 변경 불가
+var variable = 10
+variable = 20 // 값 변경 가능
+print(variable) // 20
+```
+
+
+
+## naming convention - 네이밍 컨벤션
+
+
+#### nomalcase or nomal Camel case
+- 시작부분을 제외한 각 단어의 첫 단어를 대문자로 표기합니다.
+- Swift에서는 변수명, 함수, 메서드와 같이 uppercase를 제외한 곳에서 사용합니다.
+
+#### pascal case or uppercase or Upper Camel case
+- 모든 단어의 첫 시작부분을 대문자로 표기합니다.
+- Swift에서는 filename, class, struct, enum, protocol, type에 사용합니다.
+
+~~method명 만으로 사용되는 의미를 파악 할수 있게 하는게 중요하며, 그때문에 이름이 길어지고 있습니다.~~
+
+
+
+
+## Declaring Constants and Variables - 변수와 상수 선언
+
+개별적으로 선언 가능
+```
+var x = 0.0
+var y = 0.0
+var z = 0.0
+```
+
+콤마(,)를 사용해서 한번에 선언 가능
+```
+var x = 0.1, y = 0.0, Z = 0.0
+```
+let과 var의 사용을 구분을 주의해서 선언해야 합니다.
+
+#### 변수로 사용할 수 없는 이름
+- 같은 스코프 범위 내에서 중복되는 이름
+- 공백문자
+- 수학기호
+- 화살표
+- 숫자로 시작하는 이름(시작부분 외에는 사용가능)
+
+
+
+
+### Type Annotations
+
+
+변수 선언 시 사용될 자료의 타입을 명확하게 지정하는 것입니다.
+
+```
+let year: Int = 2018
+
+let language: String
+language = "Swift 4" //Swift 4
+
+var red, green, blue: Double
+red = 255.0
+green = 150.123
+blue = 75
+```
+
+
+### Type Inference - 타입 추론
+
+
+
+별도의 자료의 타입을 지정하지 않고 컴파일 때 선언되는것입니다.
+
+```
+let name = "Tori"
+type(of: name) //String.Type
+
+let age = 1
+type(of: age) //Int.Type
+```
+
+

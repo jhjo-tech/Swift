@@ -1,0 +1,305 @@
+# Type and Literals
+
+## Literals
+고정된 값으로 표현되는 문자 (데이터) 그 자체입니다.
+
+정수 / 실수 / 문자 / 문자열 / 불리언 리터널 등이 있습니다.
+
+## Numeric Literals - 숫자 축약
+
+
+A decimal number, with no prefix
+
+A binary number, with a 0b prefix
+
+An octal number, with a 0o prefix
+
+A hexadecimal number, with a 0x prefix
+
+```
+let decimal = 123
+let binary = 0b100001 // 0b로 시작하면 2진법
+let octal = 0c21 // 0c로 시작하면 8진법
+let hexadecimal = 0x11 //0x로 시작하면 10진법
+```
+
+
+
+## 큰 숫자를 표시 하는 방법
+
+
+꼭 이렇게 해야 하는건 아니지만 가독성 면에서 좋아 질 것 같습니다.
+
+```
+var bigNumber = 1_000_000_000 // 1000000000
+bigNumber = 000_001_000_000_000 // 1000000000
+bigNumber = 0b0000_0000_0020 //2진법 표현
+bigNumber = 0x00_FF_00_FF //16진법 표현
+```
+
+
+
+## Interger Types
+
+Interger Types
+
+| bit | Int | UInt |
+|--------|--------|--------|
+|8-bit|Int8| UInt8 |
+|16-bit|Int16| UInt16 |
+|32-bit|Int32| UInt32 |
+|64-bit|Int64| UInt64 |
+
+Platform dependent - Int와 UInt를 사용하면 platform(디바이스)에 사이즈에 맞게 들어갑니다.
+
+(디바이스가 64bit면 Int64로 32Bit면 Int32로 동작하며 이는 UInt에서도 똑같이 동작합니다.)
+
+
+
+#### Int, UInt Type 선언
+
+
+```
+var integer = 123 
+var unsignedInterger: UInt = 123
+```
+
+Type이 가지는 범위를 확인 후에 해야 선언을 해야 합니다.
+
+````
+var unsignedInterger: UInt = -123
+```
+위 코드는 UInt는 음수를 표현할 수 없어서 에러가 발생합니다.
+
+
+
+#### 단위 확인 방법 (64-bit에서 실행)
+
+코드를 실행하는 디바이스(32-bit, 64-bit)에 따라 값이 변할수 있습니다.
+
+```
+MemoryLayout<Int8>.size // 1-byte
+MemoryLayout<UInt8>.size // 1-byte
+MemoryLayout<Uint>.size // 8-byte
+MemoryLayout<UInt>.size // 8-byte
+
+```
+
+
+#### Range Max, min 확인 방법
+
+64-bit기준으로 32-bit에서 호출 방법은 같으나 결과값이 다르게 나옵니다.
+```
+Int.max // (2^63)-1
+Int.min // -(2^63)
+UInt.max // (2^64)-1
+UInt.min // 0
+```
+
+
+
+### Overflow addition operatio
+
+
+0b01111111 &+ 1 = 0b10000000 = 128
+bit로 계산해서 한 자릿수씩 올립니다.
+```
+Int8.max &+ 1 //-128 최소값(음수최대값)이 된다.
+Int32.max &+ 1
+Int64.max &+ 1
+Int32.min &- 1
+Int64.min &- 1
+```
+
+
+
+## Floating-point Literals
+
+
+#### Floating type 선언
+
+Swift에서 Floating의 기본타입은 Double입니다.
+```
+var floatingPoint = 1.23
+type(of: floatingPoint) //Double.Type
+```
+
+```
+var floatValue1: Float = 1.23 //컴파일 이전에 Type을 선언
+var floatValue1 = Float(1.23) //컴파일 이후에 Type을 인지
+```
+
+
+#### 단위 확인 방법 (64-bit에서 실행)
+
+
+```
+MemoryLayout<Float>.size //4byte
+MemoryLayout<Double>.size //8byte
+```
+
+
+#### Range Max, min 확인 방법
+
+
+```
+Float.greatestFiniteMagnitude 
+Float.leastNormalMagnitude
+Double.greatestFiniteMagnitude
+Double.leastNormalMagnitude
+```
+
+
+#### 소수점 이하 정밀도
+
+
+Double은 최소 소수점 이하 15 자릿수 이하의 정밀도
+
+Float은 최소 소수점 이하 6 자릿수 이하의 정밀도
+
+부동소수점이기 때문에 소수점 이하의 정밀도는 변경 될 수 있습니다.
+
+
+
+### Boolean Literal
+
+
+다른 언어에서는 1 or 0을 넣어서 표현하는 경우도 있지만 Swift는 true, false로 지정해 줘야 합니다.
+
+```
+var isBool = true
+type(of: isBool) //Bool.Type
+var shouldChange: Bool = true
+tyep(of: shouldChange) // Bool.Type
+```
+
+
+
+### String Literal
+
+Swift에서는 Character(문자)나 String(문자열)의 기본타입은 String입니다.
+
+```
+var str = "Hello world" //Hello World
+str = "" // ""
+type(of: str) //String.Type
+var language: String = "Swift" //Swift
+```
+
+
+
+### Character Literal
+
+
+character를 사용하고 싶으면 선언을 해주면 됩니다.
+
+```
+var nonCharacter = "c"
+type(of: nonCharacter) // String.Type
+var character: Character = "c"
+type(of: character) // character.Type
+character = " " //한칸을 띄우면 
+type(of: character) //character.Type
+```
+아래 코드에서는 오류가 발생합니다.
+```
+var charater: Character = "" //한칸을 넣어야 합니다.
+character = "String" //여러 문자가 들어왔습니다.
+```
+
+
+
+### Typealias
+
+
+문맥상 더 적절한 이름으로 기존 타임의 이름을 참조하여 사용하고 하고 싶은 경우에 사용합니다.
+```
+typealias <type name> = <type expression>
+```
+
+UInt16을 AudioSample로 Typealias 한 뒤 비교
+
+```
+typealias AudioSample = UInt16
+var minAmplitudeFound = AudioSample.min
+var minAmplitudeFound1 = UInt16.min
+
+type(of: maxAmplitudeFound) //UInt16.Type
+type(of: maxAmplitudeFound1) //UInt16.Type
+```
+
+~~기능을 가져오고 싶거나 이름이 너무 길거나 하는 변수가 있을때 이름을 줄이는 용도로 사용해도 될것 같습니다.~~
+
+
+
+### Type Conversion
+
+
+타입을 바꿔서 다른 타입과 계산을 하거나 대입을 할 때 사용합니다.
+
+Int, String, Struct는 구조체로 Type Conversion을 해준다는건 해당 구조체를 생성해서 넣어준다는것과 같습니다.
+
+```
+let num = 10 //Integer.Type
+let floatNum = Float(num2)
+type(of: floatNum) //Float.Type
+let signedInterger = Int(floatNum)
+type(of: signedInterger) //Int.Type
+```
+
+
+선언된 type이 다르면 비교 및 계산을 할수 없습니다.
+```
+let height = Int8(5)
+let width = 10 //let width: Int = 10과 같은 코드입니다.
+let area = height * width // 에러 발생 height와 width의 Type이 다릅니다.
+```
+```
+let h = UInt8(25)
+let x = 10 * h //10은 reteral로 type이 정해지기 전 상태이다. 즉 10은 아직 Int type이 아니기 때문에 Uint8(25)와 계산이 가능하다.
+type(of: x) // UInt8.Type
+```
+
+
+
+### megnitude, abs - 절대값
+
+
+megnitude와 다르게 abs는 같은 타입의 값을 반환하기 때문에 abs를 사용하기를 권장합니다.
+
+```
+let integer2 = Int(-15)
+
+let magnitude = integer2.magnitude
+print(magnitude) //15
+type(of: magnitude)//UInt.Type
+let abaNum = abs(integer2)
+print(abaNum) //15
+type(of: abaNum) // Int.Type
+```
+
+### Question
+1. UInt에 음수를 넣으면?
+2. Int8에 127을 초과하는 숫자를 넣으면?
+3. Int에 Int32.max ~ Int64.max 사이의 숫자를 넣었을 경우 생각해야 할 내용은?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

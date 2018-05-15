@@ -1,0 +1,10 @@
+# Answers Function Question.
+
+#### Question
+1. 왜 argument label과 parameter laber을 따로 쓰는가?
+2. Argument label을 생략하는 경우는 언제인가?
+
+#### Answers
+
+1. func만 가지고 어떤일을 하는지 이해가 되어야 하는데 이를 더 명확하게 해주기 위해서 2개를 사용하는것 같습니다.
+2. 예를들어 print함수는 print만 봐도 어떤 일을 하는지가 명확하기 때문에 argument를 생략합니다.
