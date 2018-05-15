@@ -1,5 +1,7 @@
 # Function
+
 <br>
+
 ## Function
 
 
@@ -18,6 +20,7 @@ Function은 일련의 작업을 수행하는 코드 묶음을 식별할 수 있�
 
 
 <br>
+
 #### Function Syntax
 
 ```
@@ -37,6 +40,7 @@ greet(person: "Brian") //Hello, Brian!
 
 
 <br>
+
 #### Function with Multiple parameters
 
 ```
@@ -48,6 +52,7 @@ addNumbers(a: 3, b: 20) // 23
 ```
 
 <br>
+
 #### Argument Label - 전달인자 레이블
 
 함수를 호출할 때 함수 사용자의 입장에서 매개변수의 역할을 좀 더 명확하게 표현하고자 할 때 사용합니다.
@@ -80,6 +85,7 @@ argumentsLabel(10) // arguments를 생각하면 parameter값만 넣어주면 된
 
 
 <br>
+
 #### Parameter에 기본값 넣기
 
 ```
@@ -90,6 +96,7 @@ someFunction(parameter1: 2) //2*12==24
 ```
 
 <br>
+
 #### Variadic parameters - 가변 매개변수
 
 - 전달 받을 값의 개수를 알기 어려울 때 사용합니다.
@@ -97,6 +104,7 @@ someFunction(parameter1: 2) //2*12==24
 - 기본값이 있는 매개변수와 같이 가변 매개변수 역시 매개변수 목록 중 뒤쪽에 위치하는 것이 좋을것 같습니다.
 
 <br>
+
 #### 사용 방법
 
 ```
@@ -165,6 +173,7 @@ artihmeticMean(1.0, 2.0, 3.0, 4.0, and: 1)
 ```
 
 <br>
+
 #### Parameter를 내부에서 변수로 사용하고 싶을때
 
 ```
@@ -181,6 +190,7 @@ name은 상수(constant)이기 때문에 변수(variable)로 선언 한 다음�
 
 <br>
 <br>
+
 #### Function Without Parameters - parameter는 없고 return value가 있는 상태
 
 ```
@@ -190,7 +200,9 @@ func sayHelloWorld() -> String {
 print( sayHelloWorld() )
 ```
 위의 코드는 Pring("Hello, World")와 결과값이 같습니다.
+
 <br>
+
 #### Function without return Value - parameter는 있는데 return Value가 없는 상태
 
 ```
@@ -215,7 +227,9 @@ func say3(number: Int...) -> () {
 say3(number: 1, 2, 3)
 ```
 위 코드를 보면 return 선언을 생략하거나, Void, ()는 같은 결과값이 나옵니다.
+
 <br>
+
 #### Nested Functions - 중첩 함수
 함수 내부에서만 사용할 함수를 중첩하여 사용이 가능하게 합니다.
 
@@ -232,9 +246,11 @@ func returnFifteen() -> Int {
 }
 returnFifteen()
 ```
+
 <br>
 <br>
 <br>
+
 ### Question
 1. 왜 argument label과 parameter laber을 따로 쓰는가?
 2. Argument label을 생략하는 경우는 언제인가?
