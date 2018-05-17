@@ -1,5 +1,5 @@
-# iOS_Study
-#### Study IOS Development
+# Swift_Study
+#### Study Swift
 
 <br>
 
