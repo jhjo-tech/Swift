@@ -3,6 +3,7 @@
 <br>
 
 ## Swift 목차
+
 - #### [TheBasic](https://github.com/JhDAT/Swift/blob/master/Swift/01.The%20Basic.md)
 
 - #### [Constanse and Variable](https://github.com/JhDAT/Swift/blob/master/Swift/02.Constanse%20and%20Variable.md)
@@ -29,3 +30,11 @@
 
 - #### [Control Transfer Statement](https://github.com/JhDAT/Swift/blob/master/Swift/13.Control%20Transfer%20Statement.md)
 
+
+## playground Code
+
+플레이그라운드를 사용해서 풀어본 코드를 모아놨습니다.
+
+- #### [Function](https://github.com/JhDAT/iOS_Study/blob/master/Swift/playground%20code/FunctionAssignment.playground/Contents.swift)
+
+- #### [Loop](https://github.com/JhDAT/Swift/blob/master/Swift/playground%20code/LoopAssignment.playground/Contents.swift)
