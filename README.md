@@ -30,6 +30,18 @@
 
 - #### [Control Transfer Statement](https://github.com/JhDAT/Swift/blob/master/Swift/13.Control%20Transfer%20Statement.md)
 
+- #### [Enumerations](https://github.com/JhDAT/Swift/blob/master/Swift/14.Enumerations.md)
+
+- #### [Answers Enumerations Qeustion](https://github.com/JhDAT/Swift/blob/master/Swift/15.Answers%20Enumerations%20Question.md)
+
+- #### [Collection-Array](https://github.com/JhDAT/Swift/blob/master/Swift/16.Collection-Array.md)
+
+
+
+<br>
+
+<br>
+
 
 ## playground Code
 
