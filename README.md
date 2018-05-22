@@ -53,6 +53,6 @@
 
 - #### [Function](https://github.com/JhDAT/iOS_Study/blob/master/Swift/playground%20code/FunctionAssignment.playground/Contents.swift)
 
-- #### [Conditional Statements](https://github.com/JhDAT/Swift/blob/master/Swift/09.Answers%20Conditional%20Statements%20Question.md)
+- #### [Conditional Statements](https://github.com/JhDAT/Swift/blob/master/Swift/playground%20code/ConditionalStatements.playground/Contents.swift)
 
 - #### [Loop](https://github.com/JhDAT/Swift/blob/master/Swift/playground%20code/LoopAssignment.playground/Contents.swift)
