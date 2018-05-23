@@ -38,6 +38,10 @@
 
 - #### [Collection-Array](https://github.com/JhDAT/Swift/blob/master/Swift/16.Collection-Array.md)
 
+- #### [Collection-Dictionary](https://github.com/JhDAT/Swift/blob/master/Swift/17.Collection-Dictionary.md)
+
+- #### [Collection-Set](https://github.com/JhDAT/Swift/blob/master/Swift/18.Collection-Set.md)
+
 - #### [Access Control](https://github.com/JhDAT/Swift/blob/master/Swift/19.Access%20Control.md)
 
 
