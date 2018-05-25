@@ -2,26 +2,35 @@
 
 import UIKit
 
+/*
+ For example, number 9 has binary representation 1001 and contains a binary gap of length 2.
+ The number 529 has binary representation 1000010001 and contains two binary gaps: one of length 4 and one of length 3.
+ The number 20 has binary representation 10100 and contains one binary gap of length 1.
+ The number 15 has binary representation 1111 and has no binary gaps. The number 32 has binary representation 100000 and has no binary gaps.
+ */
+
+
+import Foundation
+
+
 // i.조장희
 
 public func solution1(_ N : Int) -> Int {
     var binary: Array<Int> = []
     var N: Int = N
-    var count: Int = 0
     var sum: Int = 0
-    var num: Int = 0
-    var num1: Int = 0
+    var count: Int = 0
+    var returnValue: Int = 0
     
     
     // 2진수 배열로 만들기
     while N != 0 {
-        count += 1
         binary.append(N % 2)
         N /= 2
     }
+    binary = binary.reversed()
+    print(binary)
     
-    //마지막이 0일경우 return 0
-    guard binary[0] == 1 else { return 0 }
     
     // 모든값이 111일경우 return 0
     for idx in binary {
@@ -31,24 +40,42 @@ public func solution1(_ N : Int) -> Int {
             return 0
         }
     }
+    // 배열을 불러와서 기존값과 현재값을 비교하는 for문입니다.
+    // 아래 for문은 10000에서 이상 동작을 합니다.
+    //    for value in binary {
+    //        if value == 1 {
+    //            count = 0
+    //            continue
+    //        } else if value == 0 {
+    //            count += 1
+    //            if count > returnValue {
+    //                returnValue = count
+    //            }
+    //        }
+    //    }
+    //    print("return 값 : \(num1)")
+    //    return num1
     
-    // 배열의 value를 한개씩 불러들여서 비교
+    // 배열을 불러와서 기존값과 현재값을 비교하는 for문입니다.
+    // 아래 for문은 10000에서 정상 동작을 합니다.
     for value in binary {
         if value == 1 {
-            num = 0
-            continue
-        } else if value == 0 {
-            num += 1
-            if num > num1 {
-                num1 = num
+            if returnValue < count {
+                returnValue = count
             }
+            count = 0
+        } else {
+            count += 1
         }
     }
-    return num1
+    
+    
+    print("return 값 : \(returnValue)")
+    return returnValue
 }
-
+print("조장희")
 solution1(1041)
-solution1(20)
+solution1(32)
 solution1(15)
 solution1(12345)
 
@@ -59,6 +86,7 @@ func binaryGap (_ N: Int) -> Int {
     var count1 = 0
     var zeroNum = 0
     
+    print(str)
     for countNum in str {
         if countNum == "0" {
             count1 += 1
@@ -72,7 +100,6 @@ func binaryGap (_ N: Int) -> Int {
     return zeroNum
 }
 
-binaryGap(1233)
 binaryGap(1041)
 binaryGap(20)
 binaryGap(15)
@@ -80,7 +107,6 @@ binaryGap(12345)
 
 // i. 이상혁
 
-import UIKit
 import Foundation
 
 // you can write to stdout for debugging purposes, e.g.
@@ -103,10 +129,11 @@ func decimalTobinary(_ num: Int) -> String {
         binaryString += String(index)
     }
     type(of: binaryString)
+    
     return binaryString // 변환된 2진수 반환
 }
 
-public func solution(decimalNumber N : Int){
+public func solution(decimalNumber N : Int) -> Int {
     let binaryNumber = decimalTobinary(N)   // 10진수 -> 2진수 변환 함수 실행
     var count = 0                           // 0의 갯수 카운트 변수
     var max = 0                             // 0의 최대갯수 저장 변수
@@ -125,7 +152,7 @@ public func solution(decimalNumber N : Int){
         }
     }
     
-    print("binary Number : ", binaryNumber, ", binary Gap : ", max)
+    return max
 }
 
 solution(decimalNumber: 1041)
