@@ -1,5 +1,11 @@
 # Swift_Study
 
+Swift4에 대해 공부한 내용들을 정리해놨습니다.
+
+(=)로 시작하는 목차는 문제들이나 알아봐야 되는 부분들의 답(?)입니다.
+
+Palyground 목차는 는 1~3주차 강의 중 과제로 내준 문제 중 playground를 사용해서 답입니다.
+
 <br>
 
 ## Swift 목차
@@ -44,6 +50,18 @@
 
 - #### [Access Control](https://github.com/JhDAT/Swift/blob/master/Swift/19.Access%20Control.md)
 
+- #### [OOP](https://github.com/JhDAT/Swift/blob/master/Swift/20.OOP.md)
+
+- #### [Property](https://github.com/JhDAT/Swift/blob/master/Swift/20-1.Property.md)
+
+- #### [Optional](https://github.com/JhDAT/Swift/blob/master/Swift/21.Optional.md)
+
+- #### [Collection Function](https://github.com/JhDAT/Swift/blob/master/Swift/22.Collection%20Functions.md)
+
+- #### [Type Casting](https://github.com/JhDAT/Swift/blob/master/Swift/23.Type%20Casting.md)
+
+- #### [Initializer](https://github.com/JhDAT/Swift/blob/master/Swift/24.Initializer.md)
+
 
 
 <br>
@@ -53,12 +71,18 @@
 
 ## playground Code
 
-문제를 플레이그라운드를 사용해서 풀어 봤습니다..
+문제를 플레이그라운드를 사용해서 풀어 봤습니다.
 
 - #### [Function](https://github.com/JhDAT/iOS_Study/blob/master/Swift/playground%20code/FunctionAssignment.playground/Contents.swift)
 
 - #### [Conditional Statements](https://github.com/JhDAT/Swift/blob/master/Swift/playground%20code/ConditionalStatements.playground/Contents.swift)
 
-- #### [Loop](https://github.com/JhDAT/Swift/blob/master/Swift/playground%20code/LoopAssignment.playground/Contents.swift)
+- #### [Loop 기능을 사용해서 구현해보기](https://github.com/JhDAT/Swift/blob/master/Swift/playground%20code/LoopAssignment.playground/Contents.swift)
 
 - #### [발표_떡상조 Codility Lesson1 풀어보기](https://github.com/JhDAT/Swift/blob/master/Swift/playground%20code/0524Codility_떡상조.playground/Contents.swift)
+
+- #### [하사드 수 구하기, 2개의 정수를 입력했을때 최소공배수와 최대공약수 구하기](https://github.com/JhDAT/Swift/blob/master/Swift/playground%20code/0523.playground/Contents.swift)
+
+  
+
+  
