@@ -2,67 +2,81 @@
 
 Swift4에 대해 공부한 내용들을 정리해놨습니다.
 
-(=)로 시작하는 목차는 문제들이나 알아봐야 되는 부분들의 답(?)입니다.
-
-Palyground 목차는 는 1~3주차 강의 중 과제로 내준 문제 중 playground를 사용해서 답입니다.
+<br>
 
 <br>
 
-## Swift 목차
+<br>
 
-- #### [TheBasic](https://github.com/JhDAT/Swift/blob/master/Swift/01.The%20Basic.md)
+## What can I know?
 
-- #### [Constanse and Variable](https://github.com/JhDAT/Swift/blob/master/Swift/02.Constanse%20and%20Variable.md)
+1. [기본 - The Basic](https://github.com/JhDAT/Swift/blob/master/Swift/01.%20%EA%B8%B0%EB%B3%B8%20-%20The%20Basic.md)
 
-- #### [Literals and Types](https://github.com/JhDAT/Swift/blob/master/Swift/03.Literals%20and%20Types.md)
+2. [변수와 상수](https://github.com/JhDAT/Swift/blob/master/Swift/02.%20%EB%B3%80%EC%88%98%EC%99%80%20%EC%83%81%EC%88%98%20-%20Constanse%20and%20Variable.md)
 
-- #### [ = Answers Type and Literals Question ](https://github.com/JhDAT/Swift/blob/master/Swift/04.Answers%20Type%20and%20Literals%20Question%20.md)
+3. [리터널과 타입](https://github.com/JhDAT/Swift/blob/master/Swift/03.%20%EB%A6%AC%ED%84%B0%EB%84%90%EA%B3%BC%20%ED%83%80%EC%9E%85%20-%20Literals%20and%20Types.md)
 
-- #### [Function](https://github.com/JhDAT/Swift/blob/master/Swift/05.Function.md)
+4. [리터널과 타입 문제](https://github.com/JhDAT/Swift/blob/master/Swift/04.%20Answers%20Type%20and%20Literals%20Question.md)
 
-- #### [= Answers Function Question](https://github.com/JhDAT/Swift/blob/master/Swift/06.Answers%20Function%20Question.md)
+5. [함수](https://github.com/JhDAT/Swift/blob/master/Swift/05.%20%ED%95%A8%EC%88%98%20-%20Function.md)
 
-- #### [Terminology](https://github.com/JhDAT/Swift/blob/master/Swift/07.Terminology.md)
+6. [함수 문제](https://github.com/JhDAT/Swift/blob/master/Swift/06.%20Answers%20Function%20Question.md)
 
-- #### [Conditional Statements](https://github.com/JhDAT/Swift/blob/master/Swift/08.Conditional%20Statements.md)
+7. [기본 연산자](https://github.com/JhDAT/Swift/blob/master/Swift/07.%20%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8%20%EC%97%B0%EC%82%B0%EC%9E%90%20-%20Basic%20Operators.md)
 
-- #### [= Answers Conditional Statements Question](https://github.com/JhDAT/Swift/blob/master/Swift/09.Answers%20Conditional%20Statements%20Question.md)
+8. [조건문](https://github.com/JhDAT/Swift/blob/master/Swift/08.%20%EC%A1%B0%EA%B1%B4%EB%AC%B8%20-%20Conditional%20Statements.md)
 
-- #### [Control Flow-Loops](https://github.com/JhDAT/Swift/blob/master/Swift/09.Control%20Flow-Loops.md)
+9. [조건문 문제](https://github.com/JhDAT/Swift/blob/master/Swift/09.%20Answers%20Conditional%20Statements%20Question.md)
 
-- #### [= Answers Control Flow-Loops Question](https://github.com/JhDAT/Swift/blob/master/Swift/10.Answers%20Control%20Flow-Loops%20Question.md)
+10. [반복문 제어](https://github.com/JhDAT/Swift/blob/master/Swift/09.%20%EB%B0%98%EB%B3%B5%20%EC%A0%9C%EC%96%B4%20%ED%9D%90%EB%A6%84%20-%20Control%20Flow-Loops.md)
 
-- #### [Tuples](https://github.com/JhDAT/Swift/blob/master/Swift/11.Tuples.md)
+11. [반복문 제어 문제](https://github.com/JhDAT/Swift/blob/master/Swift/10.%20Answers%20Control%20Flow-Loops%20Question.md)
 
-- #### [= Answers Tuples](https://github.com/JhDAT/Swift/blob/master/Swift/12.Answers%20Tuples.md)
+12. [튜플](https://github.com/JhDAT/Swift/blob/master/Swift/11.%20%ED%8A%9C%ED%94%8C%20-%20Tuples.md)
 
-- #### [Control Transfer Statement](https://github.com/JhDAT/Swift/blob/master/Swift/13.Control%20Transfer%20Statement.md)
+13. [튜플문제](https://github.com/JhDAT/Swift/blob/master/Swift/12.%20Answers%20Tuples.md)
 
-- #### [Enumerations](https://github.com/JhDAT/Swift/blob/master/Swift/14.Enumerations.md)
+14. [Control Transfet Statement](https://github.com/JhDAT/Swift/blob/master/Swift/13.%20Control%20Transfer%20Statement.md)
 
-- #### [= Answers Enumerations Qeustion](https://github.com/JhDAT/Swift/blob/master/Swift/15.Answers%20Enumerations%20Question.md)
+15. [열거형](https://github.com/JhDAT/Swift/blob/master/Swift/14.%20%EC%97%B4%EA%B1%B0%ED%98%95%20-%20Enumerations.md)
 
-- #### [Collection-Array](https://github.com/JhDAT/Swift/blob/master/Swift/16.Collection-Array.md)
+16. [열거형 문제](https://github.com/JhDAT/Swift/blob/master/Swift/15.%20Answers%20Enumerations%20Question.md)
 
-- #### [Collection-Dictionary](https://github.com/JhDAT/Swift/blob/master/Swift/17.Collection-Dictionary.md)
+17. [콜렉션 - 배열](https://github.com/JhDAT/Swift/blob/master/Swift/16.%20%EB%B0%B0%EC%97%B4%20-%20Collection-Array.md)
 
-- #### [Collection-Set](https://github.com/JhDAT/Swift/blob/master/Swift/18.Collection-Set.md)
+18. [콜렉션 - 딕셔너리](https://github.com/JhDAT/Swift/blob/master/Swift/17.%20%EB%94%95%EC%84%9C%EB%85%80%EB%A6%AC%20-%20Collection-Dictionary.md)
 
-- #### [Access Control](https://github.com/JhDAT/Swift/blob/master/Swift/19.Access%20Control.md)
+19. [콜렉션 - 셋](https://github.com/JhDAT/Swift/blob/master/Swift/18.%20%EC%85%8B%20-%20Collection-Set.md)
 
-- #### [OOP](https://github.com/JhDAT/Swift/blob/master/Swift/20.OOP.md)
+20. [콜렉션에 유용한 함수](https://github.com/JhDAT/Swift/blob/master/Swift/19.%20Collection%20Functions.md)
 
-- #### [Property](https://github.com/JhDAT/Swift/blob/master/Swift/20-1.Property.md)
+21. [접근 제한자](https://github.com/JhDAT/Swift/blob/master/Swift/20.%20%EC%A0%91%EA%B7%BC%20%EC%A0%9C%ED%95%9C%EC%9E%90%20-%20Access%20Control.md)
 
-- #### [Optional](https://github.com/JhDAT/Swift/blob/master/Swift/21.Optional.md)
+22. [프로퍼티](https://github.com/JhDAT/Swift/blob/master/Swift/21.%20%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%20-%20Property.md)
 
-- #### [Collection Function](https://github.com/JhDAT/Swift/blob/master/Swift/22.Collection%20Functions.md)
+23. [객체지향](https://github.com/JhDAT/Swift/blob/master/Swift/22.%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20-%20OOP.md)
 
-- #### [Type Casting](https://github.com/JhDAT/Swift/blob/master/Swift/23.Type%20Casting.md)
+24. [옵셔널](https://github.com/JhDAT/Swift/blob/master/Swift/23.%20%EC%98%B5%EC%85%94%EB%84%90%20-%20Optional.md)
 
-- #### [Initializer](https://github.com/JhDAT/Swift/blob/master/Swift/24.Initializer.md)
+25. [타입캐스팅](https://github.com/JhDAT/Swift/blob/master/Swift/24.%20%ED%83%80%EC%9E%85%20%EC%BA%90%EC%8A%A4%ED%8C%85%20-%20Type%20Casting.md)
 
+26. [초기화](https://github.com/JhDAT/Swift/blob/master/Swift/25.%20%EC%B4%88%EA%B8%B0%ED%99%94%20-%20Initializer.md)
 
+27. [App Life Cycle](https://github.com/JhDAT/iOS-development-study/blob/master/0528/App%20Life%20Cycle.md)
+
+28. [iOS UI Guide](https://github.com/JhDAT/iOS-development-study/blob/master/0529/iOS%20UI%20Guide.md)
+
+29. [Frame](https://github.com/JhDAT/iOS-development-study/blob/master/0529/Frame.md)
+
+30. [고차함수](https://github.com/JhDAT/iOS-development-study/blob/master/0531/High-order%20Function.md)
+
+31. [UI View Controller](https://github.com/JhDAT/iOS-development-study/blob/master/0604/UIViewController.md)
+
+32. [Singleton](https://github.com/JhDAT/iOS-development-study/blob/master/0605/Singleton.md)
+
+33. [UserDefaulte](https://github.com/JhDAT/iOS-development-study/blob/master/0605/UserDefaults.md)
+
+    
 
 <br>
 
