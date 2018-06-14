@@ -76,6 +76,8 @@ Swift4에 대해 공부한 내용들을 정리해놨습니다.
 
 33. [UserDefaulte](https://github.com/JhDAT/iOS-development-study/blob/master/0605/UserDefaults.md)
 
+34. [Delegate](https://github.com/JhDAT/iOS-development-study/blob/master/0607/Delegate.md)
+
     
 
 <br>
