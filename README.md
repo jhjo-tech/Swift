@@ -62,13 +62,13 @@ Swift4에 대해 공부한 내용들을 정리해놨습니다.
 
 26. [초기화](https://github.com/JhDAT/Swift/blob/master/Swift/25.%20%EC%B4%88%EA%B8%B0%ED%99%94%20-%20Initializer.md)
 
-27. [고차함수](https://github.com/JhDAT/iOS-development-study/tree/master/0531)
+27. [고차함수](https://github.com/JhDAT/iOS-development-study/blob/master/0531_High%20order%20function/High-order%20Function.md)
 
-28. [Singleton](https://github.com/JhDAT/iOS-development-study/blob/master/0605/Singleton.md)
+28. [Singleton](https://github.com/JhDAT/iOS-development-study/blob/master/0605_Singleton%2C%20UserDefaults/Singleton.md)
 
-29. [UserDefaulte](https://github.com/JhDAT/iOS-development-study/blob/master/0605/UserDefaults.md)
+29. [UserDefaulte](https://github.com/JhDAT/iOS-development-study/blob/master/0605_Singleton%2C%20UserDefaults/UserDefaults.md)
 
-30. [Delegate](https://github.com/JhDAT/iOS-development-study/blob/master/0607/Delegate.md)
+30. [Delegate](https://github.com/JhDAT/iOS-development-study/blob/master/0607_Delegate%2C%20login%20%ED%99%94%EB%A9%B4%20%EA%B5%AC%ED%98%84%ED%95%B4%EB%B3%B4%EA%B8%B0/Delegate.md)
 
 
 <br>
