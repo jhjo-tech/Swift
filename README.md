@@ -62,23 +62,14 @@ Swift4에 대해 공부한 내용들을 정리해놨습니다.
 
 26. [초기화](https://github.com/JhDAT/Swift/blob/master/Swift/25.%20%EC%B4%88%EA%B8%B0%ED%99%94%20-%20Initializer.md)
 
-27. [App Life Cycle](https://github.com/JhDAT/iOS-development-study/blob/master/0528/App%20Life%20Cycle.md)
+27. [고차함수](https://github.com/JhDAT/iOS-development-study/tree/master/0531)
 
-28. [iOS UI Guide](https://github.com/JhDAT/iOS-development-study/blob/master/0529/iOS%20UI%20Guide.md)
+28. [Singleton](https://github.com/JhDAT/iOS-development-study/blob/master/0605/Singleton.md)
 
-29. [Frame](https://github.com/JhDAT/iOS-development-study/blob/master/0529/Frame.md)
+29. [UserDefaulte](https://github.com/JhDAT/iOS-development-study/blob/master/0605/UserDefaults.md)
 
-30. [고차함수](https://github.com/JhDAT/iOS-development-study/blob/master/0531/High-order%20Function.md)
+30. [Delegate](https://github.com/JhDAT/iOS-development-study/blob/master/0607/Delegate.md)
 
-31. [UI View Controller](https://github.com/JhDAT/iOS-development-study/blob/master/0604/UIViewController.md)
-
-32. [Singleton](https://github.com/JhDAT/iOS-development-study/blob/master/0605/Singleton.md)
-
-33. [UserDefaulte](https://github.com/JhDAT/iOS-development-study/blob/master/0605/UserDefaults.md)
-
-34. [Delegate](https://github.com/JhDAT/iOS-development-study/blob/master/0607/Delegate.md)
-
-    
 
 <br>
 
